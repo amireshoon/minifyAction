@@ -12,5 +12,5 @@ runs:
     - run: |
         cd ${{ github.action_path }}/script
         ls
-        sudo minify.sh ${{ inputs.push-branch }}
+        sudo bash minify.sh ${{ inputs.push-branch }}
       shell: bash
