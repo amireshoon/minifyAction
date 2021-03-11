@@ -1,0 +1,14 @@
+name: 'Minify Action'
+description: 'Minify code and push to another branch'
+
+inputs:
+  push-branch:
+    description: 'Branch you wanna push minified codes'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        sudo ${{ github.action_path }}/script/minify.sh ${{ inputs.push-branch }}
+      shell: bash
