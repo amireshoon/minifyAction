@@ -5,11 +5,14 @@ inputs:
   push-branch:
     description: 'Branch you wanna push minified codes'
     required: true
+  repo:
+    description: 'Current repo'
+    required: true
 
 runs:
   using: "composite"
   steps:
     - run: |
         cd ${{ github.action_path }}/script
-        sudo bash minify.sh ${{ inputs.push-branch }}
+        sudo bash minify.sh ${{ inputs.push-branch }} ${{ https://github.com/{account-name}/{repository-name}.git }}
       shell: bash
