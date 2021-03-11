@@ -10,5 +10,7 @@ runs:
   using: "composite"
   steps:
     - run: |
+        cd ${{ github.action_path }}/script
+        ls
         sudo ${{ github.action_path }}/script/minify.sh ${{ inputs.push-branch }}
       shell: bash
