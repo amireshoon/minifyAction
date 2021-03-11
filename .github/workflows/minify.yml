@@ -19,5 +19,5 @@ jobs:
         push-branch: production
     - name: Running Tests
       run: |
-        python3 --version
+        minifier
     name: Minify
