@@ -19,5 +19,5 @@ jobs:
         push-branch: production
     - name: Running Tests
       run: |
-        echo passed
+        python3 --version
     name: Minify
