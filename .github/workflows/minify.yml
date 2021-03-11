@@ -17,6 +17,7 @@ jobs:
       uses: amireshoon/minifyAction@main
       with:
         push-branch: production
+        repo: ${{github.repository}}
     - name: Running Tests
       run: |
         minifier test.css
