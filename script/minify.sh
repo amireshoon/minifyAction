@@ -14,6 +14,7 @@ sudo chmod +x /usr/local/bin/minifier
 export PATH=$PATH:/usr/local/bin/minifier
 
 echo $1
+echo $2
 mkdir github && cd github
 git clone https://github.com/$2.git workspace
 cd workspace
