@@ -15,7 +15,7 @@ export PATH=$PATH:/usr/local/bin/minifier
 
 echo $1
 mkdir github && cd github
-git clone https://github.com/$1.git workspace
+git clone https://github.com/$2.git workspace
 cd workspace
 ls
 # echo $2
