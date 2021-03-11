@@ -12,4 +12,6 @@ runs:
     - run: |
         cd ${{ github.action_path }}/script
         sudo bash minify.sh ${{ inputs.push-branch }}
+      env:
+        ENVIRONMENT_VARIABLE_NAME: ${{ secrets.action_path }}
       shell: bash
