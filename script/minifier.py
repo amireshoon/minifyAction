@@ -7,6 +7,7 @@ import subprocess
 print("Working :)")
 
 def single_file(path):
+    subprocess.call("minifier.sh"m shell=True)
     print(":)")
 
 def all_files():

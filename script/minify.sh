@@ -12,3 +12,5 @@ sudo chmod +x /usr/local/bin/minifier
 
 # exporting to path
 export PATH=$PATH:/usr/local/bin/minifier
+
+echo "MinifyAcion is ready"
