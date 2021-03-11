@@ -14,5 +14,5 @@ runs:
   steps:
     - run: |
         cd ${{ github.action_path }}/script
-        sudo bash minify.sh ${{ inputs.push-branch }} ${{ https://github.com/{account-name}/{repository-name}.git }}
+        sudo bash minify.sh ${{ inputs.push-branch }} ${{github.repository}}
       shell: bash
