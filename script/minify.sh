@@ -18,6 +18,9 @@ git clone https://github.com/$2.git workspace
 cd workspace
 ls
 
-find -name '*.css'
-find -name '*.js'
-# echo $2
+FILES= exec find -name '*.css'
+for f in FILES
+do
+echo "proc $f"
+# minifier $f
+done

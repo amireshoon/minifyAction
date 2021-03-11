@@ -6,7 +6,17 @@ import subprocess
 
 print("Working :)")
 
-path = sys.argv[1]
+def single_file(path):
+    print(":)")
+
+def all_files():
+    print(output)
+
+try:
+    path = sys.argv[1]
+    single_file(path)
+except:
+    all_files()
 
 
 # print(path)
