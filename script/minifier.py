@@ -9,4 +9,7 @@ print("Working :)")
 path = sys.argv[1]
 
 
-print(path)
+# print(path)
+import os 
+my_list = os.listdir('.')
+print(my_list)
