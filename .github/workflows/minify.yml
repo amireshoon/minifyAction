@@ -19,5 +19,5 @@ jobs:
         push-branch: production
     - name: Running Tests
       run: |
-        minifier
+        minifier test.css
     name: Minify
