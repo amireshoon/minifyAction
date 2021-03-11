@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #8a8f98;
+  transition: color .2s ease;
+}
+
+a:hover {
+  color: white;
+}
+
+img {
+  pointer-events: none
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes waitingAnimation {
+  from {color: white;}
+  to {color: #8a8f98;}
+}
+
+:root {
+  --color-yellow: rgb(253, 184, 39);
+  --color-yellow-low-alpha: rgba(253, 184, 39, 0.3);
+}
+
+::selection {
+  background: var(--color-yellow-low-alpha); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--color-yellow-low-alpha); /* Gecko Browsers */
+}
