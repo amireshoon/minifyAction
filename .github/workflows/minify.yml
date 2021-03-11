@@ -1,0 +1,23 @@
+name: minify
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-20.04]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Pashmak
+      uses: amireshoon/minifyAction@main
+      with:
+        push-branch: production
+    - name: Running Tests
+      run: |
+        echo passed
+    name: Minify
