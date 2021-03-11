@@ -15,8 +15,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up Minify Actions
       uses: amireshoon/minifyAction@main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         push-branch: production
     - name: Running Tests
