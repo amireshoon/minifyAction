@@ -25,3 +25,7 @@ done
 echo "Minified $ITEMS files"
 
 git status
+git switch -c $1
+git add .
+git commit -m "MinifyAction" "Minified css, js and html"
+git push origin $1
