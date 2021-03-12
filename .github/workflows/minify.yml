@@ -10,7 +10,9 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-20.04]
-
+    env:
+      pbranch: production
+      prepo: ${{github.repository}}
     steps:
     - uses: actions/checkout@v2
     - name: Set up Minify Actions
@@ -21,5 +23,5 @@ jobs:
     - name: Running Tests
       run: |
         minifier test.css
-        minifier.sh $push-branch $repo
+        minifier.sh $pbranch $prep
     name: Minify
