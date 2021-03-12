@@ -3,8 +3,6 @@ echo $1
 mkdir github && cd github
 git clone https://github.com/$1.git workspace
 cd workspace
-git config pull.rebase true
-git pull
 ls
 
 CSS=$(find . -type f -name "*.css")
