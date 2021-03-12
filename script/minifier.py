@@ -13,4 +13,5 @@ try:
     single_file(path)
     print("Running on --> ", path)
 except:
-    all_files()
+    # all_files()
+    print('Something is happening')
