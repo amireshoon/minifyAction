@@ -20,14 +20,11 @@ jobs:
       with:
         push-branch: $pbranch
         repo: $prepo
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        repo_actor: ${{ secrets.GITHUB_ACTOR }}
     - name: Running Tests
       run: |
-        minifier.sh $pbranch $prepo $GITHUB_TOKEN $GITHUB_ACTOR
+        minifier.sh $pbranch $prepo $repo_token $repo_actor
     - name: Commiting changes
       run: |
         echo here
