@@ -1,7 +1,9 @@
-name: 'Minify Css Js and Html files in github action'
+name: 'Minify Css Js and Html files in GitHub Action'
 description: 'Minify code and push to another branch'
-color: blue
-icon: minimize-2
+author: Amirhossein Meydani
+branding:
+  color: blue
+  icon: minimize-2
 
 inputs:
   repo:
