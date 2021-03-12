@@ -23,4 +23,12 @@ jobs:
     - name: Running Tests
       run: |
         minifier.sh $pbranch $prepo
+    - name: Commiting changes
+      run: |
+        git config --global user.name 'Minify-Action-Bot'
+        git config --global user.email '<>'
+        git status
+        git add -A
+        git commit -m "Minified files"
+        git push
     name: Minify
