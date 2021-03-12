@@ -18,7 +18,7 @@ done
 
 for j in $JS
 do
-minifier $j
+# minifier $j
 ITEMS=$(($ITEMS + 1))
 done
 
