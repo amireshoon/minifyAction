@@ -17,7 +17,7 @@ sudo chmod u+rx minifier.sh
 # exporting to path
 export PATH=$PATH:/usr/local/bin/minifier
 
-export PATH="/usr/local/bin/minifierbash:$PATH"
+export PATH=$PATH:/usr/local/bin/minifierbash
 
 echo $PATH
 echo "MinifyAcion is ready"
