@@ -13,10 +13,12 @@ for c in $CSS
 do
 echo "doint css -> $c"
 # minifier $f
+minifier $c
 done
 
 for j in $JS
 do
 echo "doint js -> $j"
 # minifier $f
+minifier $j
 done

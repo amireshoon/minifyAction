@@ -22,6 +22,5 @@ jobs:
         repo: $prepo
     - name: Running Tests
       run: |
-        minifier test.css
         minifier.sh $pbranch $prepo
     name: Minify
