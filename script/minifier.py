@@ -14,7 +14,7 @@ def single_file(path):
         do_html(path)
 
 def all_files():
-    print('doing on everything')
+    print('yep')
 
 def do_js(path):
     from css_html_js_minify import process_single_js_file, js_minify
@@ -31,7 +31,5 @@ def do_html(path):
 try:
     path = sys.argv[1]
     single_file(path)
-    print("Running on --> ", path)
 except:
-    # all_files()
-    print('Something is happening')
+    print("Path not founded")
