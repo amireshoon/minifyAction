@@ -12,12 +12,12 @@ sudo cp minifier.sh /usr/local/bin
 
 # making executable
 sudo chmod +x /usr/local/bin/minifier
-sudo chmod +x /usr/local/bin/minifierbash
+sudo chmod +x /usr/local/bin/minifier.sh
 
 # exporting to path
 export PATH=$PATH:/usr/local/bin/minifier
 
-export PATH=$PATH:/usr/local/bin/minifierbash
+export PATH=$PATH:/usr/local/bin/minifier.sh
 
 echo $PATH
 echo "MinifyAcion is ready"

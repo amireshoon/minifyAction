@@ -22,5 +22,5 @@ jobs:
       run: |
         minifier test.css
       run: |
-        minifierbash
+        minifier.sh
     name: Minify
