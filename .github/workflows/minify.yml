@@ -21,6 +21,5 @@ jobs:
     - name: Running Tests
       run: |
         minifier test.css
-      run: |
         minifier.sh
     name: Minify
