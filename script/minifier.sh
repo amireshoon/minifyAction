@@ -14,12 +14,11 @@ for c in $CSS
 do
 minifier $c
 ITEMS=$(($ITEMS + 1))
-cat $c
 done
 
 for j in $JS
 do
-# minifier $j
+minifier $j
 ITEMS=$(($ITEMS + 1))
 done
 
