@@ -43,30 +43,30 @@ echo "Minified $ITEMS files"
 
 
 
-set -e
+# set -e
 
-timestamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+# timestamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
-INPUT_AUTHOR_EMAIL='github-actions[bot]@users.noreply.github.com'
-INPUT_AUTHOR_NAME='github-actions[bot]'
+# INPUT_AUTHOR_EMAIL='github-actions[bot]@users.noreply.github.com'
+# INPUT_AUTHOR_NAME='github-actions[bot]'
 
-REPOSITORY=$2
-git switch -c $1
-echo "Push to branch $1";
-[ -z "$3" ] && {
-    echo 'Missing input "github_token: ${{ secrets.GITHUB_TOKEN }}".';
-    exit 1;
-};
+# REPOSITORY=$2
+# git switch -c $1
+# echo "Push to branch $1";
+# [ -z "$3" ] && {
+#     echo 'Missing input "github_token: ${{ secrets.GITHUB_TOKEN }}".';
+#     exit 1;
+# };
 
-cd github/workspace
+# cd github/workspace
 
-remote_repo="https://$4:$3@github.com/$2.git"
+# remote_repo="https://$4:$3@github.com/$2.git"
 
-git config http.sslVerify false
-git config --local user.email "${INPUT_AUTHOR_EMAIL}"
-git config --local user.name "${INPUT_AUTHOR_NAME}"
+# git config http.sslVerify false
+# git config --local user.email "${INPUT_AUTHOR_EMAIL}"
+# git config --local user.name "${INPUT_AUTHOR_NAME}"
 
-git add -A
+# git add -A
 
-git commit -m "minified"
-git push "${remote_repo}" HEAD:"$1";
+# git commit -m "minified"
+# git push "${remote_repo}" HEAD:"$1";

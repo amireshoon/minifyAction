@@ -28,6 +28,9 @@ jobs:
       run: |
         minifier.sh $pbranch $prepo $repo_token $repo_actor
     - name: Commiting changes
-      run: |
-        echo here
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        directory: github/workspace
+        branch: $pbranch
     name: Minify
