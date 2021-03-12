@@ -53,11 +53,11 @@ INPUT_AUTHOR_NAME='github-actions[bot]'
 REPOSITORY=$2
 git switch -c $1
 echo "Push to branch $1";
-[ -z "$3" ] && {
-    echo 'Missing input "github_token: ${{ secrets.GITHUB_TOKEN }}".';
-    exit 1;
-};
-
+# [ -z "$3" ] && {
+#     echo 'Missing input "github_token: ${{ secrets.GITHUB_TOKEN }}".';
+#     exit 1;
+# };
+echo $3
 cd github/workspace
 
 remote_repo="https://$4:$3@github.com/$2.git"
