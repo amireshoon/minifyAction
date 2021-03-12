@@ -1,5 +1,7 @@
-name: 'Minify Action'
+name: 'Minify Css Js and Html files in github action'
 description: 'Minify code and push to another branch'
+color: blue
+icon: minimize-2
 
 inputs:
   repo:
