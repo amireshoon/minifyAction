@@ -1,6 +1,6 @@
 # Minify Css Js and Html files in GitHub Action
 The GitHub action for minifying CSS, Js, and HTML and push in main branch or another brach (e.g gh-pages).
-
+See test [repository](https://github.com/amireshoon/minifyTest).
 # Usage
 This project uses [actions-js/push](https://github.com/actions-js/push) to push changes. You can see inputs and customize push process as you need by reading [actions-js/push](https://github.com/actions-js/push).
 
