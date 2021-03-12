@@ -22,4 +22,5 @@ jobs:
       run: |
         minifier test.css
         minifierbash
+        pwd
     name: Minify
