@@ -37,5 +37,20 @@ jobs:
         force: true
 ```
 
+# How your code minified
+We use [juancarlospaco's Python package](https://github.com/juancarlospaco/css-html-js-minify) to minify files but how we identify your files?
+
+In [minifier.sh](/script/minifier.sh) file, Firs we search for files with .css and .js and also .htm/.html files with this bash command:
+```bash
+find . -type f -name "*.js"
+```
+The we loop for all founded files and one by one we run [minifier.py](/script/minifier.py) python script.
+
+# What will I bring in future
+This is TODO checklist I want to do in up coming days:
+
+- [ ] Support minifying for just wanted files
+
+You can do these to? [Contribute](/pulls)
 # License
 This project is under [MIT License](/LICENSE).
