@@ -12,16 +12,11 @@ JS=$(find . -type f -name "*.js")
 for c in $CSS
 do
 echo "doint css -> $c"
-# minifier $f
-# python3 minifier.py $c
+minifier $f
 done
 
 for j in $JS
 do
 echo "doint js -> $j"
-# minifier $f
-# python3 minifier.py $j
+minifier $j
 done
-
-which minifier
-minifier test.css

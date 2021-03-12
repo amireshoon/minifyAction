@@ -2,14 +2,11 @@
 
 import sys
 
-
-print("Working :)")
-
 def single_file(path):
-    print(":)")
+    # print(":)")
 
 def all_files():
-    print('')
+    # print('')
 
 try:
     path = sys.argv[1]
@@ -17,5 +14,4 @@ try:
 except:
     all_files()
 
-
-# print(path)
+print("Running on", path)
