@@ -1,5 +1,6 @@
 #!/bin/sh
-
+echo $1
+echo $2
 mkdir github && cd github
 git clone https://github.com/$2.git workspace
 cd workspace
