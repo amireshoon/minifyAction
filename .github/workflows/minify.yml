@@ -26,8 +26,8 @@ jobs:
     - name: Commiting changes
       run: |
         cd github/workspace
-        git config --global user.name 'Minify-Action-Bot'
-        git config --global user.email '<>'
+        git config --global user.name 'amireshoon'
+        git config --global user.email '<abtin.yas53@gmail.com>'
         git status
         git switch -c $pbranch
         git add -A
