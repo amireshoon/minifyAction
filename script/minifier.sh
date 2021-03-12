@@ -24,10 +24,10 @@ done
 
 echo "Minified $ITEMS files"
 
-git config --global user.name 'MinifyAction bot'
+git config --global user.name 'MinifyActionbot'
 git config --global user.email '<>'
 git status
 git switch -c $1
 git add -A
-git commit -m "MinifyAction" "Minified css, js and html"
+git commit -m "Minified css, js and html"
 git push origin $1
