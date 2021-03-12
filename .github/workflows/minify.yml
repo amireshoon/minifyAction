@@ -25,6 +25,7 @@ jobs:
         minifier.sh $pbranch $prepo
     - name: Commiting changes
       run: |
+        cd github/workspace
         git config --global user.name 'Minify-Action-Bot'
         git config --global user.email '<>'
         git status
