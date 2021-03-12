@@ -39,4 +39,4 @@ git status
 git switch -c $1
 git add -A
 git commit -m "Minified css, js and html"
-git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$2.git" $1
+git push "https://$4:$3@github.com/$2.git" $1
