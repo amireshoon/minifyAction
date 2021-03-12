@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 
 import sys
-import subprocess
 
 
 print("Working :)")
 
 def single_file(path):
-    subprocess.call("./minifier.sh", shell=True)
     print(":)")
 
 def all_files():
@@ -21,9 +19,3 @@ except:
 
 
 # print(path)
-import os 
-my_list = os.listdir('.')
-# print(my_list)
-import os
-cwd = os.getcwd()
-print(cwd)
