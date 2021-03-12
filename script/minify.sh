@@ -8,7 +8,7 @@ sudo cp minifier.py /usr/local/bin
 sudo mv /usr/local/bin/minifier.py /usr/local/bin/minifier
 
 sudo cp minifier.sh /usr/local/bin
-sudo mv /usr/local/bin/minifier.sh /usr/local/bin/minifierbash
+# sudo mv /usr/local/bin/minifier.sh /usr/local/bin/minifierbash
 
 # making executable
 sudo chmod +x /usr/local/bin/minifier
