@@ -31,5 +31,5 @@ jobs:
         git status
         git add -A
         git commit -m "Minified files"
-        git push origin $pbranch
+        git push -u origin $pbranch
     name: Minify
