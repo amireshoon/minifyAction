@@ -31,3 +31,12 @@ echo "Minified $ITEMS files"
 # git add -A
 # git commit -m "Minified css, js and html"
 # git push origin $1
+
+git config user.name "$(git --no-pager log --format=format:'%an' -n 1)"
+git config user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
+cd github/workspace
+git status
+git switch -c $1
+git add -A
+git commit -m "Minified css, js and html"
+git push origin $1
