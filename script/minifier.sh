@@ -23,3 +23,5 @@ ITEMS=$(($ITEMS + 1))
 done
 
 echo "Minified $ITEMS files"
+
+git status
