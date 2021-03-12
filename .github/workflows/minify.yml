@@ -27,4 +27,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         directory: github/workspace
         branch: production
+        message: Minified css, js and html
+        author_name: MinifyAction[bot]
+        author_email: amireshoon-minifyAction@users.noreply.github.com
     name: Minify
