@@ -21,11 +21,6 @@ jobs:
     - name: Running Tests
       run: |
         minifier.sh $prepo
-    - name: Pulling
-      run: |
-        cd github/workspace
-        git config pull.rebase true
-        git pull https://github.com/$prepo.git
     - name: Commiting changes
       uses: actions-js/push@master
       with:
