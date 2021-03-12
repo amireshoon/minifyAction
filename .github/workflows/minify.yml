@@ -25,10 +25,10 @@ jobs:
         minifier.sh $pbranch $prepo
     - name: Commiting changes
       uses: actions-js/push@master
+      env:
+        pushed_branch: $pbranch
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         directory: github/workspace
         branch: $pushed_branch
-      env:
-        pushed_branch: $pbranch
     name: Minify
