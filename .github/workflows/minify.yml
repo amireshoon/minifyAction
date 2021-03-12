@@ -13,8 +13,6 @@ jobs:
     env:
       pbranch: production
       prepo: ${{github.repository}}
-      repo_token: ${{ secrets.GITHUB_TOKEN }}
-      repo_actor: ${{ secrets.GITHUB_ACTOR }}
     steps:
     - uses: actions/checkout@v2
     - name: Set up Minify Actions
@@ -22,15 +20,13 @@ jobs:
       with:
         push-branch: $pbranch
         repo: $prepo
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        repo_actor: ${{ secrets.GITHUB_ACTOR }}
     - name: Running Tests
       run: |
-        minifier.sh $pbranch $prepo $repo_token $repo_actor
+        minifier.sh $pbranch $prepo
     - name: Commiting changes
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         directory: github/workspace
-        branch: ${{ pbranch }}
+        branch: env.pbranch
     name: Minify
