@@ -28,7 +28,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         directory: github/workspace
-        branch: env.pushed_branch
+        branch: $pushed_branch
       env:
         pushed_branch: $pbranch
     name: Minify
