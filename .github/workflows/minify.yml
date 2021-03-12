@@ -31,6 +31,9 @@ jobs:
         git switch -c $pbranch
         git add -A
         git commit -m "Minified files"
-        git push -u origin $pbranch
-        git branch
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: $pbranch
     name: Minify
