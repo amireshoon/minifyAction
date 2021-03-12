@@ -24,6 +24,8 @@ done
 
 echo "Minified $ITEMS files"
 
+git config --global user.name 'MinifyAction bot'
+git config --global user.email '<amirhwsin@outlook.com>'
 git status
 git switch -c $1
 git add .
