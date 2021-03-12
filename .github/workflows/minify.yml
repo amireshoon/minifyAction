@@ -29,8 +29,9 @@ jobs:
         git config --global user.name 'Minify-Action-Bot'
         git config --global user.email '<>'
         git status
+        git switch -c $pbranch
         git add -A
         git commit -m "Minified files"
-        echo git push -u origin $pbranch
+        git push -u origin $pbranch
         git branch
     name: Minify
