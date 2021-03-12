@@ -26,14 +26,11 @@ jobs:
     - name: Commiting changes
       run: |
         cd github/workspace
-        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
+        git config --global user.name 'Minify Action Bot'
+        git config --global user.email 'amireshoon@users.noreply.github.com'
         git switch -c $pbranch
         git add -A
         git commit -m "Minified files"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ pbranch }}
+        git push -u origin $pbranch
+        git branch
     name: Minify
