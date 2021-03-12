@@ -24,7 +24,8 @@ jobs:
     - name: Pulling
       run: |
         cd github/workspace
-        git pull https://github.com/$prep.git
+        git config pull.rebase true
+        git pull https://github.com/$prepo.git
     - name: Commiting changes
       uses: actions-js/push@master
       with:
