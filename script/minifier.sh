@@ -13,12 +13,12 @@ for c in $CSS
 do
 echo "doint css -> $c"
 # minifier $f
-minifier $c
+python3 minifier.py $c
 done
 
 for j in $JS
 do
 echo "doint js -> $j"
 # minifier $f
-minifier $j
+python3 minifier.py $j
 done
