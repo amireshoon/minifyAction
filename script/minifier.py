@@ -11,7 +11,7 @@ def single_file(path):
     print(":)")
 
 def all_files():
-    print(output)
+    print('')
 
 try:
     path = sys.argv[1]
@@ -23,4 +23,7 @@ except:
 # print(path)
 import os 
 my_list = os.listdir('.')
-print(my_list)
+# print(my_list)
+import os
+cwd = os.getcwd()
+print(cwd)
