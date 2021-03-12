@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 mkdir github && cd github
 git clone https://github.com/$2.git workspace
