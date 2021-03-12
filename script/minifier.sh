@@ -1,7 +1,7 @@
 #!/bin/sh
-echo $2
+echo $1
 mkdir github && cd github
-git clone https://github.com/$2.git workspace
+git clone https://github.com/$1.git workspace
 cd workspace
 ls
 
