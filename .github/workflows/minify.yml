@@ -20,17 +20,13 @@ jobs:
       with:
         push-branch: $pbranch
         repo: $prepo
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
     - name: Running Tests
       run: |
         minifier.sh $pbranch $prepo
     - name: Commiting changes
       run: |
-        cd github/workspace
-        git config --global user.name 'Minify Action Bot'
-        git config --global user.email 'amireshoon@users.noreply.github.com'
-        git switch -c $pbranch
-        git add -A
-        git commit -m "Minified files"
-        git push -u origin $pbranch
-        git branch
+        echo here
     name: Minify
