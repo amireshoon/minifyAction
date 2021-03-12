@@ -16,4 +16,4 @@ try:
     print("Running on --> ", path)
 except:
     # all_files()
-    # print('Something is happening')
+    print('Something is happening')
