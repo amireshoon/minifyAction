@@ -21,3 +21,5 @@ do
 minifier $j
 ITEMS=$(($ITEMS + 1))
 done
+
+echo "Minified $ITEMS files"
