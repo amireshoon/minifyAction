@@ -20,7 +20,5 @@ jobs:
         repo: ${{github.repository}}
     - name: Running Tests
       run: |
-        minifier test.css
-        minifierbash
         pwd
     name: Minify
