@@ -13,6 +13,8 @@ jobs:
     env:
       pbranch: production
       prepo: ${{github.repository}}
+      repo_token: ${{ secrets.GITHUB_TOKEN }}
+      repo_actor: ${{ secrets.GITHUB_ACTOR }}
     steps:
     - uses: actions/checkout@v2
     - name: Set up Minify Actions
