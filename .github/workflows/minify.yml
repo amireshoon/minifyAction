@@ -21,6 +21,9 @@ jobs:
     - name: Running Tests
       run: |
         minifier.sh $prepo
+    - name: Pulling
+      run: |
+        git pull https://github.com/$prep.git
     - name: Commiting changes
       uses: actions-js/push@master
       with:
