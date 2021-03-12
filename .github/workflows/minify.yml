@@ -11,24 +11,20 @@ jobs:
       matrix:
         os: [ubuntu-20.04]
     env:
-      pbranch: production
       prepo: ${{github.repository}}
     steps:
     - uses: actions/checkout@v2
     - name: Set up Minify Actions
       uses: amireshoon/minifyAction@main
       with:
-        push-branch: $pbranch
         repo: $prepo
     - name: Running Tests
       run: |
-        minifier.sh $pbranch $prepo
+        minifier.sh $prepo
     - name: Commiting changes
       uses: actions-js/push@master
-      env:
-        pushed_branch: $pbranch
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         directory: github/workspace
-        branch: $pushed_branch
+        branch: production
     name: Minify
