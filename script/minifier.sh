@@ -12,8 +12,9 @@ JS=$(find . -type f -name "*.js")
 ITEMS=0
 for c in $CSS
 do
-minifier $f
+minifier $c
 ITEMS=$(($ITEMS + 1))
+cat $c
 done
 
 for j in $JS
