@@ -12,7 +12,7 @@ sudo mv /usr/local/bin/minifier.sh /usr/local/bin/minifierbash
 
 # making executable
 sudo chmod +x /usr/local/bin/minifier
-sudo chmod u+rx minifier.sh
+sudo chmod u+rx /usr/local/bin/minifierbash
 
 # exporting to path
 export PATH=$PATH:/usr/local/bin/minifier
