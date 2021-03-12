@@ -10,12 +10,14 @@ CSS=$(find . -type f -name "*.css")
 JS=$(find . -type f -name "*.js")
 
 ITEMS=0
-for c in $CSS do
+for c in $CSS
+do
 minifier $f
 ITEMS=$(($ITEMS + 1))
 done
 
-for j in $JS do
+for j in $JS
+do
 minifier $j
 ITEMS=$(($ITEMS + 1))
 done
