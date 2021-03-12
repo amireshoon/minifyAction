@@ -19,4 +19,5 @@ export PATH=$PATH:/usr/local/bin/minifier
 
 export PATH="/usr/local/bin/minifierbash:$PATH"
 
+echo $PATH
 echo "MinifyAcion is ready"
