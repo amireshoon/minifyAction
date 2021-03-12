@@ -3,10 +3,10 @@
 import sys
 
 def single_file(path):
-    # print(":)")
+    print("doning on --> ", path)
 
 def all_files():
-    # print('')
+    print('doing on everything')
 
 try:
     path = sys.argv[1]
@@ -14,4 +14,4 @@ try:
 except:
     all_files()
 
-print("Running on", path)
+print("Running on --> ", path)
