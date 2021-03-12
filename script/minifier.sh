@@ -9,14 +9,15 @@ ls
 CSS=$(find . -type f -name "*.css")
 JS=$(find . -type f -name "*.js")
 
+ITEMS=0
 for c in $CSS
 do
-echo "doint css -> $c"
 minifier $f
+ITEMS++
 done
 
 for j in $JS
 do
-echo "doint js -> $j"
 minifier $j
+ITEMS++
 done

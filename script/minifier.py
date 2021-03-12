@@ -11,7 +11,6 @@ def all_files():
 try:
     path = sys.argv[1]
     single_file(path)
+    print("Running on --> ", path)
 except:
     all_files()
-
-print("Running on --> ", path)
