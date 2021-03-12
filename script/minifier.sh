@@ -24,4 +24,4 @@ echo "doint js -> $j"
 done
 
 which minifier
-which minifier.py
+minifier test.css
