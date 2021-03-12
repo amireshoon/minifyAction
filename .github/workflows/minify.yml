@@ -26,9 +26,8 @@ jobs:
     - name: Commiting changes
       run: |
         cd github/workspace
-        git config --global user.name 'amireshoon'
-        git config --global user.email '<abtin.yas53@gmail.com>'
-        git status
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
         git switch -c $pbranch
         git add -A
         git commit -m "Minified files"
