@@ -11,9 +11,9 @@ CSS=$(find . -type f -name "*.css")
 JS=$(find . -type f -name "*.js")
 
 # Getting all html files in project
-HTML=$(find . -type f -name ".*html")
+HTML=$(find . -type f -name "*.html")
 # Getting all htm files in project
-HTM=$(find . -type f -name ".*htm")
+HTM=$(find . -type f -name "*.htm")
 
 # For counting all files that minified
 ITEMS=0
